@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/iphone8_p.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (orientation: portrait) {
+  @media screen and (min-width: 751px) {
+    .image-wrapper {
+      background-image: url("./images/iphoneX_p.png");
+    }
+  }
+
+  @media screen and (min-width: 1126px) {
+    .image-wrapper {
+      background-image: url("./images/ipad_p.png");
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .image-wrapper {
+    background-image: url("./images/desktop_720.png");
+  }
+
+  @media screen and (min-width: 720px) {
+    .image-wrapper {
+      background-image: url("./images/desktop_1080.png");
+    }
+  }
+
+  @media screen and (min-width: 1081px) {
+    .image-wrapper {
+      background-image: url("./images/desktop_4k.png");
+    }
+  }
+}
